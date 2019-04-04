@@ -13,6 +13,7 @@ for i in test_string:
         temp.append(s)
         s = str()
 temp.append(s)
-if '' in temp: temp.remove('')
+if '' in temp:
+    temp.remove('')
 
 print(math_operation.get_operation(temp))
