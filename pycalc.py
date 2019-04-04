@@ -1,11 +1,16 @@
+import re
+
 import math_operation
+import calculator
+
+input_string = input('Enter your expression: ')
 
 
-test_string = 'abs(-5)'
 
+
+"""
 temp = list()
 s = str()
-
 for i in test_string:
     if i not in ['(', ',', ')']:
         s += i
@@ -15,5 +20,7 @@ for i in test_string:
 temp.append(s)
 if '' in temp:
     temp.remove('')
+"""
 
-print(math_operation.get_operation(temp))
+print(calculator.eval_(input_string))
+#print(math_operation.get_operation(temp))

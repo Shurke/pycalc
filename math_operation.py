@@ -1,10 +1,8 @@
 import math
 
-constants = ['e', 'inf', 'nan', 'pi', 'tau']
-
 
 def get_operation(temp: list):
-    if temp[0] in constants:
+    if len(temp) == 1:
         result = math.__dict__[temp[0]]
     elif temp[0] == 'abs':
         result = abs(*[float(i) for i in temp[1:]])
