@@ -1,7 +1,7 @@
 import math_operation
 
 
-test_string = 'pow(4, 0.5)'
+test_string = 'abs(-5)'
 
 temp = list()
 s = str()
